@@ -1,0 +1,41 @@
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="modernizr.custom.js"></script>
+	<script src="game.js"></script>
+	<link rel="stylesheet" href="styles.css" />
+	<link href='http://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div id="container">
+		<div class="content">
+			<table id="simon" cellspacing="0">
+				<tr class="top">
+					<td class="tile 1" id="green"></td>
+					<td class="tile 2" id="red"></td>
+				</tr>
+				<tr class="bottom">
+					<td class="tile 3" id="yellow"></td>
+					<td class="tile 4" id="blue"></td>
+				</tr>
+			</table>
+
+			<div id="infoArea">
+				<div class="content">
+					<div id="info">
+						<div id="start">
+							<span>Start</span>
+						</div>
+						<div id="score">
+							Score: <p class="scoreValue">0</p>
+						</div>
+						<div id="gameOver">
+							Game Over<br/>
+							Score: <span class="scoreValue">0</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>

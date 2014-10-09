@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<title>Color Picker</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+		<script src="scripts.js"></script>
+		<script src="ntc.js"></script>
+
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">	
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+	</head>
+	<body>
+		<div id="container">
+			<div id="heading">
+				<h2>Color Picker</h2>
+				<p>RBG/Hex color converter that displays your colors. Just update a value to begin</p>
+			</div>
+			<div id="inputs">
+					<div id="red">
+						<h4>Red</h4>
+						<input id="redBox" type="number" min=0 max=255 value=255 onkeyup="rgbToHex()"></input>
+						<div id="redSlider" class="slider"></div>
+					</div>
+					<div id="green">
+						<h4>Green</h4>
+						<input id="greenBox" type="number" min=0 max=255 value=255 onkeyup="rgbToHex()"></input>
+						<div id="greenSlider" class="slider"></div>
+					</div>
+					<div id="blue">
+						<h4>Blue</h4>
+						<input id="blueBox" type="number" min=0 max=255 value=255 onkeyup="rgbToHex()"></input>
+						<div id="blueSlider" class="slider"></div>
+					</div>
+			</div>
+			<div id="hex">
+				<h5>Hex Value</h5>
+				#<input id="hexBox" type="text" value="ffffff" maxlength=7 onkeyup="hexToRgb()"></input>
+			</div>
+			<div id="closestColor">
+				<h5>Closest Color</h5>
+				<p id="colorName">White</p>
+			</div>
+		</div>
+	</body>
+</html>

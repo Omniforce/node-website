@@ -1,0 +1,49 @@
+<head>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+	<script src="public/javascripts/draw.js"></script>
+	<script src="public/javascripts/names.js"></script>
+	<script src="public/javascripts/keyHandler.js"></script>
+	<script src="public/javascripts/websockets.js"></script>
+	<script src='public/javascripts/spectrum.js'></script>
+	<link rel='stylesheet' href='public/stylesheets/spectrum.css' />
+	<link rel='stylesheet' href='public/stylesheets/game.css' />
+</head>
+<body>
+	<div id="game">
+		<canvas id="canvas" width="600" height="600">
+			Please don't use IE
+		</canvas>
+	</div>
+
+	<table id="content">
+		<tr>
+			<th id="playersHeader">Players</th>
+		</tr>
+		<tr>
+			<td id="playerbox" class="shadow rounded">
+				<div id="players"></div>
+			</td>
+			<td class="shadow rounded">
+				<div id="chatbox">
+					<div id="conversation"></div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Choose an name and color:</p>
+				<input type='text' id="colorPicker"/>
+				<form id='name_form'>
+					<input type='text' name='name' id='user_name'>
+				</form>
+			</td>
+			<td>
+				<div id="messageSubmit">
+					<textarea id="chatMessage"></textarea>
+					<input type="button" id="sendMessage" value="send"/>
+				</div>
+			</td>
+		</tr>
+	</table>
+</body>

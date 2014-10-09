@@ -1,0 +1,98 @@
+html,body {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+body {
+	background-color: #000;
+	margin: 0;
+}
+
+#container {
+	display: table;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+.content {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#simon {
+	margin: auto;
+	transform:rotate(45deg);
+	-ms-transform:rotate(45deg);
+	-webkit-transform:rotate(45deg);
+}
+
+#infoArea {
+	width: 150px;
+	height: 150px;
+	left: 50%;
+	top: 50%;
+	margin-left: -75px;
+	margin-top: -75px;
+	position: absolute;
+	background-color: #000;
+	z-index: 3;
+	border-radius: 100%;
+	color: #FFF;
+	text-align: center;
+	display: table;	
+	font-size: 20px;
+}
+
+#info {
+	margin: auto;
+}
+
+#score {
+	display: none;
+}
+
+#gameOver {
+	display: none;
+}
+
+.scoreValue {
+	margin: auto;
+}
+
+.tile {
+	width: 300px;
+	height: 300px;
+	opacity: 0.6;
+}
+
+.active {
+	opacity: 1 !important;
+}
+
+#green {
+	background-color: #00BF00;
+	border-radius: 100% 0 0 0;
+	margin: auto;
+}
+
+#red {
+	background-color: #F40000;
+	border-radius: 0 100% 0 0;
+}
+
+#yellow {
+	background-color: #EBEB00;
+	border-radius: 0 0 0 100%;
+}
+
+#blue {
+	background-color: #00B7B7;
+	border-radius: 0 0 100% 0;
+	margin: auto;
+}
+
+#info {
+	font-family: 'Audiowide';
+}

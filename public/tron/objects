@@ -1,0 +1,15 @@
+Player:
+ - active: boolean
+ - direction: string(up, down, left, right)
+ - color: string
+ - x-position: int
+ - y-position: int
+ - wall: array of wallSegments
+
+WallSegment:
+ - x-position: int
+ - y-position: int
+
+Game:
+ - Player 1: player
+ - Player 2: player
