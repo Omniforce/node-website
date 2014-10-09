@@ -1,4 +1,4 @@
-var socket = io.connect('http://localhost:80');
+var socket = io.connect('http://brendanross.me:80');
 var gameOver = false;
 var waitingTimer;
 var textFocus = false;
