@@ -1,5 +1,5 @@
 var WebSocket = (function (Player, Draw) {
-	var socket = io.connect('http://localhost:3000');
+	var socket = io.connect('http://brendanross.me:80');
 	var waitingTimer;
 
 	socket.on('connect', function() {

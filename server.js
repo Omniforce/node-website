@@ -6,7 +6,7 @@ var logger = require('morgan');
 
 app.use('/public', express.static(__dirname + '/public'));
 
-server.listen(3000);
+server.listen(80);
 
 app.get('/', function(req, res) {
 	res.sendFile(__dirname + '/index.html');
