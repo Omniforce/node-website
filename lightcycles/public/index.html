@@ -1,0 +1,43 @@
+<head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.2/socket.io.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jscolor/2.0.4/jscolor.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<script src="scripts/player.js"></script>
+	<script src="scripts/draw.js"></script>
+	<script src="scripts/websocket.js"></script>
+	<script src="scripts/events.js"></script>
+
+	<link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" \>
+	<link rel='stylesheet' href="stylesheets/styles.css" \>
+</head>
+<body>
+	<div class="content">
+		<div class="gameboard">
+			<canvas id="canvas" width="600" height="600">
+				Please don't use IE
+			</canvas>
+		</div>
+		<div class="sidebar">
+			<div id="players">
+				<h4 class="bold"><strong>Players</strong></h4>
+				<ul id="playersList" class="list-group">
+					<li class="list-group-item"><div class="ready-indicator pull-left ready"></div><div class="" style="color:blue">Player Name</div></li>
+				</ul>
+			</div>
+			<div id="info">
+				<form id="infoForm">
+					<div class="form-group">
+						<label for="name">Change your name</label>
+						<input type="text" class="form-control" id="name">
+					</div>
+					<div class="form-group">
+						<label for="color">Change your color</label>
+						<input class="jscolor {hash:true} form-control" id="color">
+					</div>
+					<button id="readyButton" class="btn btn-block">Ready!</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>

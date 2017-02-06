@@ -1,0 +1,50 @@
+.content {
+    width: 1200px;
+    height: 600px;
+
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+}
+
+.gameboard {
+	width: 600px;
+	height: 600px;
+
+	float: left;
+}
+
+.sidebar {
+	width: 600px;
+	height: 600px;
+
+	float: right;
+    padding-left: 10px;
+}
+
+#playersList li {
+	border-style: none;
+}
+
+.ready-indicator {
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.ready {
+    background-color: #5cb85c;
+}
+
+.not-ready {
+    background-color: #d9534f;
+}
+
+#info {
+    display: none;
+}
