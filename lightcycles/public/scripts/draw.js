@@ -27,7 +27,7 @@ var Draw = (function () {
 	module.drawSelectScreen = function() {
 		context.font = '50pt Gothic';
 		context.fillStyle = '#18CAE6';
-		context.fillText("TRON", centerX, 250)
+		context.fillText("Light Cycles", centerX, 250)
 
 		context.font = '30pt Gothic';
 		context.fillStyle = 'white';
